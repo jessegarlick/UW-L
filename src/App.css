@@ -1,0 +1,76 @@
+/* General reset for body to remove default margins and set background */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  background: rgb(255, 255, 255); /* Clean black background */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #ffffff; /* Background for the navbar */
+  color: #000000; /* Text color for the navbar */
+  display: flex;
+  justify-content: space-between; /* Space between left, center, and right sections */
+  align-items: center;
+  padding: 10px 20px; /* Padding inside the navbar */
+  position: fixed; /* Keep the navbar at the top */
+  top: 0; /* Position at the top */
+  width: 100%; /* Ensure the navbar spans the full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+
+/* Flex containers for the navbar sections */
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Left-aligned links container */
+.left-links, .right-links {
+  flex: 1; /* Allow these sections to take up equal space */
+  display: flex;
+  gap: 20px; /* Spacing between the links */
+}
+
+/* Center the logo container */
+.logo-container {
+  flex: 0 1 300px; /* Center section takes up its own space and flexes for responsiveness */
+  text-align: center;
+}
+
+/* Styling for the logo link to center it */
+.logo-link {
+  text-decoration: none; /* Removes underline from the logo link */
+  color: #000000; /* Ensures the logo text is visible */
+  font-weight: bold; /* Make the logo text bold */
+  font-size: 24px; /* Larger font size for emphasis */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Navigation links styling */
+nav a {
+  color: #000000; /* Link color */
+  text-decoration: none;
+  padding: 10px; /* Add padding around each link */
+}
+
+nav a:hover,
+nav a:focus {
+  color: #004185; /* Hover/focus color */
+}
+
+/* Styling for the right side of the navbar */
+.right-links {
+  justify-content: flex-end; /* Align the right links to the right */
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* Optional: Phone number styling */
+.phone {
+  margin-right: 10px;
+  font-size: 18px; /* Adjust size if necessary */
+}
